@@ -1,9 +1,24 @@
-body
+/*bouton*/
+
+.boutoncontour
+{
+border-radius: 35px;
+padding: 15px;
+margin: 15px auto 15px auto;
+border: 1px solid #FF79DA;
+}
+.boutontaille
+{
+
+}
+
+
+/*body*/
+.page_principal, .page_secondaire
 {
     display: flex;
     flex-direction: column;
 }
-
 header
 {
     display: flex;
@@ -15,15 +30,81 @@ header img
     max-width: 100%;
     height: auto;
     margin: 10px;
+    border-radius: 5%;
     order: 1;
 }
 
 nav
 {
     order: 2;
+    width: auto;
+    background-color: red;
 }
 
 nav ul li
 {
     display: inline;
+   
 }
+
+ .lien1
+{
+    float: left;
+    margin-left : 5%;
+}
+
+.lien2
+{
+    float: right;
+    margin-right: 5%;
+}
+
+section
+{
+    display: flex;
+    background-color: green;
+    flex-direction: column;
+}
+section article
+{
+    order: 1;
+    
+}
+section article strong
+{
+    order: 2;
+    flex-direction: center;
+}
+section ul
+{
+    order: 3;
+}
+
+footer
+{
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+}
+footer p
+{
+    order: 1;
+}
+footer a
+{
+    order: 2;
+}
+
+/* tableau evenement */
+
+table {
+
+    border-collapse: collapse;
+
+  }
+
+  table, th, td {
+
+    border: 1px solid black;
+
+  }
