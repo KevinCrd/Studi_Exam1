@@ -1,23 +1,35 @@
 /*bouton*/
 
-.boutoncontour
+.page_principal .boutoncontour
 {
-border-radius: 35px;
-padding: 15px;
-margin: 15px auto 15px auto;
-border: 1px solid #FF79DA;
-}
-.boutontaille
-{
-
+    border-radius: 35px;
+    padding: 15px;
+    margin: 15px auto 15px auto;
+    border: 1px solid #FF79DA;
+    justify-content: center;
 }
 
+/* tableau evenement */
+
+.page_evenement table {
+
+    border-collapse: collapse;
+
+  }
+
+.page_evenement table, th, td {
+
+    border: 1px solid black;
+
+}
 
 /*body*/
-.page_principal, .page_secondaire
+.page_principal, .page_evenement
 {
     display: flex;
     flex-direction: column;
+    background-image: url("arriereplan.png");
+    margin: 10px;
 }
 header
 {
@@ -29,41 +41,25 @@ header img
 {
     max-width: 100%;
     height: auto;
-    margin: 10px;
     border-radius: 5%;
+    margin: 10px 0 10px 0;
     order: 1;
 }
 
 nav
 {
-    order: 2;
     width: auto;
-    background-color: red;
+    margin: auto;
 }
-
-nav ul li
+nav table
 {
-    display: inline;
-   
+    border-spacing: 5px;
 }
-
- .lien1
-{
-    float: left;
-    margin-left : 5%;
-}
-
-.lien2
-{
-    float: right;
-    margin-right: 5%;
-}
-
 section
 {
     display: flex;
-    background-color: green;
     flex-direction: column;
+    margin: 5px;
 }
 section article
 {
@@ -73,7 +69,6 @@ section article
 section article strong
 {
     order: 2;
-    flex-direction: center;
 }
 section ul
 {
@@ -83,7 +78,6 @@ section ul
 footer
 {
     display: flex;
-    background-color: blue;
     flex-direction: column;
 }
 footer p
@@ -94,17 +88,3 @@ footer a
 {
     order: 2;
 }
-
-/* tableau evenement */
-
-table {
-
-    border-collapse: collapse;
-
-  }
-
-  table, th, td {
-
-    border: 1px solid black;
-
-  }
