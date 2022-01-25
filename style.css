@@ -1,4 +1,29 @@
 body
 {
     display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header img
+{
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    order: 1;
+}
+
+nav
+{
+    order: 2;
+}
+
+nav ul li
+{
+    display: inline;
 }
