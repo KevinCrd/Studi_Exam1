@@ -5,7 +5,7 @@
     border-radius: 35px;
     padding: 15px;
     margin: 15px auto 15px auto;
-    border: 1px solid #FF79DA;
+    border: 1px solid #000000;
     justify-content: center;
 }
 
@@ -23,7 +23,7 @@
 
 }
 
-/*body*/
+/*body page principal*/
 .page_principal, .page_evenement
 {
     display: flex;
@@ -50,6 +50,7 @@ nav
 {
     width: auto;
     margin: auto;
+    order: 2;
 }
 nav table
 {
@@ -64,7 +65,7 @@ section
 section article
 {
     order: 1;
-    
+    margin-top: 15px;
 }
 section article strong
 {
@@ -74,11 +75,16 @@ section ul
 {
     order: 3;
 }
+section .rechercheBenevole
+{
+    order: 4;
+}
 
 footer
 {
     display: flex;
     flex-direction: column;
+    margin: 5px;
 }
 footer p
 {
@@ -87,4 +93,40 @@ footer p
 footer a
 {
     order: 2;
+}
+/* Page evenement */
+.page_evenement caption
+{
+    margin-bottom: 10px; 
+}
+.ajout_evenement
+{
+    margin-top: 15px;
+}
+
+/* tablette */
+
+@media screen and (min-width: 600px){
+
+    .page_principal table
+    {
+        border-spacing: 50px; 
+    }
+    .page_principal .boutoncontour
+    {
+        padding: 30px;
+    }
+}
+@media screen and (min-width: 1200px){
+
+    header img
+    {
+        height: 500px;
+        object-fit: cover;
+    }
+
+
+
+
+
 }
